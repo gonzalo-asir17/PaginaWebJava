@@ -1,0 +1,242 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+    backdrop-filter: blur(20px);
+}
+header .logo {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 2em;
+}
+header ul {
+    position: relative;
+    display: flex;
+    gap: 40px;
+}
+header ul li {
+    list-style: none;
+}
+header ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500; 
+    font-size: 1.25em;
+}
+header ul li.active a,
+header ul li:hover a {
+    color: #30fe6c;
+}
+#reloj {
+    color: white;
+    font-size: 2em;
+    animation: parpadeo 1s infinite;
+  }
+
+  @keyframes parpadeo {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+#home {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(24, 26, 27);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+}
+#home .content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 650px;
+    z-index: 10;
+}
+#home .content h2 {
+    position: relative;
+    font-size: 5em;
+    color: #30fe6c;
+}
+#home .content p {
+    position: relative;
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+.btn {
+    position: relative;
+    display: inline-block;
+    font-size: 1.25em;
+    max-width: 200px;
+    background: #30fe6c;
+    color: #222;
+    text-align: center;
+    padding: 18px 30px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    margin-top: 10px;
+}
+#home .men {
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    max-height: 90vh;
+    padding-bottom: 10cm;
+    padding-right: 5.5cm;
+}
+#services,
+#portfolio,
+#contact {
+    position: relative;
+    background: #1131d3;
+    min-height: 100vh;
+    padding: 120px 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.secText {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.secText h2 {
+    font-size: 3em;
+    color: #fff;
+}
+.secText p {
+    max-width: 700px;
+    text-align: center;
+    color: #aaa;
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+#services .content {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+    margin: 40px 0;
+}
+#services .content .servicesBx {
+    background: #2e2f34;
+    padding: 50px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border: 2px solid #2e2f34;
+}
+#services .content .servicesBx:hover {
+    border: 2px solid #30fe6c;
+}
+#services .content .servicesBx img {
+    max-width: 100px;
+    filter: invert(0);
+    opacity: 0.5;
+    transition: 0.5s;
+
+}
+#services .content .servicesBx:hover img {
+    opacity: 1;
+}
+#services .content .servicesBx h3 {
+    color: #fff;
+    font-weight: 500;
+    color: #30fe6c;
+}
+.center {
+    width: 100%;
+    text-align: center;
+}
+#portfolio {
+    background: rgb(24, 26, 27);;
+    text-align: center;
+}
+#portfolio .content {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    margin: 40px 0;
+}
+#portfolio .content .imgBx {
+    position: relative;
+}
+#portfolio .content .imgBx h3 {
+    color:#30fe6c;
+    font-weight: 500;
+}
+#portfolio .content .imgBx img {
+    max-width: 30%;
+    
+}
+#contact .content {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+    margin: 40px 0;
+}
+#contact .content a {
+    background: #2e2f34;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #fff;
+    transition: 0.5s;
+}
+#contact .content a:hover {
+    background: #30fe6c;
+}
+#contact .content a ion-icon {
+    color: #30fe6c;
+    font-size: 1.5em;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+#contact .content a:hover,
+#contact .content a:hover ion-icon {
+    color: #222;
+}
+.copyrights {
+    margin-top: 150px;
+    position: relative;
+    color: #aaa;
+    font-size: 1.2em;
+}
+.copyrights a {
+    color: #30fe6c;
+}
+ 
